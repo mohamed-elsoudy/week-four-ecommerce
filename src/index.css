@@ -1,0 +1,154 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --btn-green: #00ff66;
+  --orange: #db4444;
+  --gold: #ffad33;
+  --yello: #eeff61;
+
+  --btn-orange-hover: #E2B93B;
+  --hover-btn-blue: #EB5757;
+
+  --bg-grey: #F5F5F5;
+  --boder-color: #e3e3e3;
+  --txt-grey: #808080;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-48 {
+  font-size: 38px;
+}
+@media(min-width: 768px) {
+  .fs-48 {
+    font-size: 48px;
+  }
+}
+
+.green {
+  background-color: var(--btn-green);
+}
+.txt-green {
+  color: var(--btn-green);
+}
+.orange {
+  background-color: var(--orange);
+}
+.txt-orange {
+  color: var(--orange);
+}
+.gold {
+  background-color: var(--gold);
+}
+.yello {
+  background-color: var(--yello);
+}
+.bg-grey {
+  background-color: var(--bg-grey);
+}
+.bg-dark-grey {
+  background-color: var(--txt-grey);
+}
+.txt-grey {
+  color: var(--txt-grey);
+}
+
+.main-border {
+  border: 1px solid var(--boder-color);
+}
+.main-border-top {
+  border-top: 1px solid var(--boder-color);
+}
+.main-border-bottom {
+  border-bottom: 1px solid var(--boder-color);
+}
+.main-border-right {
+  border-right: 1px solid var(--boder-color);
+}
+.border-solid-bottom {
+  border-bottom: 1px solid #000000;
+}
+
+.m-6 {
+  margin: 4rem;
+}
+.my-6 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.mx-6 {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+.mt-6 {
+  margin-top: 4rem;
+}
+.mb-6 {
+  margin-bottom: 4rem;
+}
+.ms-6 {
+  margin-left: 4rem;
+}
+.me-6 {
+  margin-right: 4rem;
+}
+
+.p-6 {
+  padding: 4rem;
+}
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.px-6 {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+.pt-6 {
+  padding-top: 4rem;
+}
+.pb-6 {
+  padding-bottom: 4rem;
+}
+.ps-6 {
+  padding-left: 4rem;
+}
+.pe-6 {
+  padding-right: 4rem;
+}

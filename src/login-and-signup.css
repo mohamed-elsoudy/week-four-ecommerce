@@ -1,0 +1,17 @@
+.login,
+.signup {
+    margin-top: 60px;
+    margin-bottom: 120px;
+    gap: 40px 110px;
+}
+.login img {
+    max-width: 805px;
+    height: 781px;
+}
+.login-field {
+    margin-left: 20px;
+}
+.login form input,
+.signup form input {
+    border: none;
+}
