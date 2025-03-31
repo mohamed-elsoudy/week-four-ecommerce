@@ -5,7 +5,7 @@ const allProductsSlice = createSlice({
     name: "allProductsSlice",
     initialState: [
         {
-            imgSrc: "../public/imgs/joystake (4).png",
+            imgSrc: "/imgs/joystake (4).png",
             title: "HAVIT HV-G92 Gamepad",
             price: 120,
             rate: 88, 

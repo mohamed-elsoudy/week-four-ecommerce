@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 
 function Todays() {
-    const products = useSelector((state) => state.products);
+    const products = useSelector((state) => state.products.todaysProducts);
 
     return (
         <Container className="pb-5 main-border-bottom">
@@ -56,22 +56,10 @@ function Todays() {
                 </Row>
             </div>
             <div className="today-products d-flex gap-4 my-4">
-                {/* <Card imgSrc="../public/imgs/joystake (4).png" title="HAVIT HV-G92 Gamepad" price={120} afterDiscount={160} rate={88} descountperc={40} sale={true} isDescountperc={true}/>
-                <Card imgSrc="../public/imgs/Keyboard.png" title="AK-900 Wired Keyboard" price={1160} afterDiscount={960} rate={75} descountperc={35} sale={true} isDescountperc={true}/>
-                <Card imgSrc="../public/imgs/chair.png" title="S-Series Comfort Chair" price={400} afterDiscount={375} rate={99} descountperc={25} sale={true} isDescountperc={true}/>
-                <Card imgSrc="../public/imgs/screen.png" title="IPS LCD Gaming Monitor" price={400} afterDiscount={370} rate={99} descountperc={30} sale={true} isDescountperc={true}/> */}
                 {products.map((el , index) =>
                 <Card
                     key={index}
-                    imgSrc={el.imgSrc} 
-                    title={el.title} 
-                    price={el.price} 
-                    afterDiscount={el.afterDiscount} 
-                    rate={el.rate} 
-                    descountperc={el.descountperc} 
-                    sale={el.sale} 
-                    isDescountperc={el.isDescountperc} 
-                    id={index + 40}
+                    product={el}
                 />)}
             </div>
             <div className="text-center">

@@ -46,7 +46,7 @@ function BillingDetails() {
                     <label htmlFor="save-information" className="d-flex gap-3">
                         <input type="checkbox" id="save-information" className="d-none"/>
                         <div className="save-informations">
-                            <span><img src="../public/imgs/right.svg" alt="" /></span>
+                            <span><img src="/imgs/right.svg" alt="" /></span>
                         </div>
                         Save this information for faster check-out next time
                     </label>
@@ -62,16 +62,6 @@ function BillingDetails() {
                         </div>
                         );
                         })}
-                        {/* <div className="d-flex gap-3 mt-4">
-                            <img src="../public/imgs/joystake (4).png" width={45} alt="" />
-                            <span>H1 Gamepad</span>
-                            <span className="d-inlineblock ms-auto">$650</span>
-                        </div>
-                        <div className="d-flex gap-3 mt-4">
-                            <img src="../public/imgs/screen.png" width={45} alt="" />
-                            <span>LCD Monitor</span>
-                            <span className="d-inlineblock ms-auto">$1150</span>
-                        </div> */}
                     </div>
                     <div className="billing-elements mt-4">  
                         <div className="pb-3 pt-2 fw-normal main-border-bottom d-flex justify-content-between">
@@ -91,7 +81,7 @@ function BillingDetails() {
                         <div className="bank d-flex justify-content-between mt-3 mb-2">
                             <input type="radio" name="bank" id="bank" />
                             <label htmlFor="bank" className="flex-grow-1 d-flex gap-3"><div></div>Bank</label>
-                            <img src="../public/imgs/bank.svg" alt="" />
+                            <img src="/imgs/bank.svg" alt="" />
                         </div>
                         <div className="cash">
                             <input type="radio" name="bank" id="cash" />

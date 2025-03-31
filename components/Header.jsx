@@ -48,12 +48,12 @@ function Header() {
                         className="me-2 search-bar  bg-grey"
                         aria-label="Search"
                         />
-                        <img src="../public/imgs/Vector.svg" alt="" />
+                        <img src="/imgs/Vector.svg" alt="" />
                     </Form>
                     <div className="icons d-flex gap-4 mt-2 mt-lg-0">
-                        <Link to="wishlist">{wishlist.length > 0 && <span className='orange'>{wishlist.length}</span>}<img src="../public/imgs/Wishlist.svg" alt="" /></Link>
-                        <Link to="cart">{cartitems.length > 0 && <span className='orange'>{cartitems.length}</span>}<img src="../public/imgs/Cart1.svg" alt="" /></Link>
-                        {user.user && <Link to="account"><img src="../public/imgs/user.svg" alt="" /></Link>}
+                        <Link to="wishlist">{wishlist.length > 0 && <span className='orange'>{wishlist.length}</span>}<img src="/imgs/Wishlist.svg" alt="" /></Link>
+                        <Link to="cart">{cartitems.length > 0 && <span className='orange'>{cartitems.length}</span>}<img src="/imgs/Cart1.svg" alt="" /></Link>
+                        {user.user && <Link to="account"><img src="/imgs/user.svg" alt="" /></Link>}
                     </div>
                 </Navbar.Collapse>
             </Container>

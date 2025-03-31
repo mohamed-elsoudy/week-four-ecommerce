@@ -2,8 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import MainBtn from "../shapes-components/MainBtn";
 import Card from "../dry-components/Card";
 import { Link } from "react-router-dom";
-
+import { useSelector } from "react-redux";
 function ThisMonth() {
+const products = useSelector(state => state.products.thismonthProducts) 
     return (
         <Container className="py-5 main-border-bottom">
             <div className="todays d-flex align-items-center txt-orange">
@@ -19,10 +20,9 @@ function ThisMonth() {
                 </Row>
             </div>
             <div className="today-products d-flex gap-4 my-4">
-                <Card imgSrc="../public/imgs/Frame 605.png" title="The north coat" price={360} afterDiscount={260} rate={65} descountperc={0} sale={true} isDescountperc={false} id={45}/>
-                <Card imgSrc="../public/imgs/Frame 606.png" title="Gucci duffle bag" price={1160} afterDiscount={960} rate={75} descountperc={35} sale={true} isDescountperc={false} id={46}/>
-                <Card imgSrc="../public/imgs/Frame 610.png" title="RGB liquid CPU Cooler" price={170} afterDiscount={160} rate={99} descountperc={25} sale={true} isDescountperc={false} id={47}/>
-                <Card imgSrc="../public/imgs/Frame 612.png" title="Small BookSelf" price={400} afterDiscount={370} rate={99} descountperc={30} sale={true} isDescountperc={false} id={48}/>
+                {products.map((product, i) => {
+                    <Card key={i} product={product}/>
+                })}
             </div>
         </Container>
     );

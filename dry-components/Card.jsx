@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { addToWishList, removeFromWishList } from "../src/store/explore-our-products/wishlistSlice";
 import { FaHeart } from "react-icons/fa";
 
-function Card({imgSrc, title, price, afterDiscount, rate, descountperc, sale, isDescountperc, id , product = {imgSrc, title, id, price, rate, sale}}) {
+function Card({product}) {
 
     const dispatch = useDispatch();
     const user = useSelector((state) => state.authSlice.user);
@@ -34,17 +34,17 @@ return (
 
             <div className="card-head bg-grey d-flex justify-content-center align-items-center rounded-1 position-relative">
                 <Link to={`/productdetails/${product.id}`}>
-                    <img src={imgSrc} alt="" width={172}/>
+                    <img src={product.image} alt="" width={172}/>
                 </Link>
 
-                {isDescountperc == true && <div className="percent position-absolute orange">-{descountperc}%</div>}
+                {product.sale && <div className="percent position-absolute orange">-{product.sale}%</div>}
 
                 <ul className="shapes position-absolute">
                     <li style={{cursor: "pointer"}} onClick={() => {hadleHeartClick()}}>
-                        {isInWishlist? <FaHeart size={24} className={"txt-orange"} /> : <img src="../public/imgs/Wishlist.svg" alt="" />}
+                        {isInWishlist? <FaHeart size={24} className={"txt-orange"} /> : <img src="/imgs/Wishlist.svg" alt="" />}
                     </li>
                     <li>
-                        <img src="../public/imgs/Cart1.svg" alt="" />
+                        <img src="/imgs/Cart1.svg" alt="" />
                     </li>
                 </ul>
 
@@ -54,19 +54,19 @@ return (
             </div>
 
             <div className="card-body">
-                <span className="fs-16 fw-semibold d-block mt-2">{title}</span>
+                <span className="fs-16 fw-semibold d-block mt-2">{product.title}</span>
                 <div className="price mt-2 fs-16 fw-semibold txt-orange">
-                    ${afterDiscount}{sale &&  <del className="txt-grey ps-2">${price}</del>}
+                    ${product.afterDiscount}{product.sale &&  <del className="txt-grey ps-2">${product.price}</del>}
                 </div>
                 <div className="stars mt-2 d-flex gap-1">
                     <ul className="d-flex gap-1">
-                        <li><img src="../public/imgs/star.svg" alt="" /></li>
-                        <li><img src="../public/imgs/star.svg" alt="" /></li>
-                        <li><img src="../public/imgs/star.svg" alt="" /></li>
-                        <li><img src="../public/imgs/star.svg" alt="" /></li>
-                        <li><img src="../public/imgs/star.svg" alt="" /></li>
+                        <li><img src="/imgs/star.svg" alt="" /></li>
+                        <li><img src="/imgs/star.svg" alt="" /></li>
+                        <li><img src="/imgs/star.svg" alt="" /></li>
+                        <li><img src="/imgs/star.svg" alt="" /></li>
+                        <li><img src="/imgs/star.svg" alt="" /></li>
                     </ul>
-                    <span className="txt-grey fw-bolder ps-2 fs-14">({rate})</span>
+                    <span className="txt-grey fw-bolder ps-2 fs-14">({product.rating.count})</span>
                 </div>
             </div>
 

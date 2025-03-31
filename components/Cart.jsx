@@ -2,7 +2,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { useDispatch, useSelector } from "react-redux";
 import { increaseQuantity, dicreaseQuantity } from "../src/store/explore-our-products/cartSlice";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Cart() {
     const dispatch = useDispatch();
@@ -26,42 +26,6 @@ function Cart() {
                     <Col>Quantity</Col>
                     <Col>Subtotal</Col>
                 </Row>
-                {/* <Row className="py-3 px-4 shadow-sm rounded fw-normal mt-4 align-items-center mx-0">
-                    <Col className="d-flex gap-3">
-                        <div className="position-relative" style={{width: 50}}>
-                            <img src="../public/imgs/screen.png" width={50} alt="" /><span className="position-absolute top-0 start-0 translate-middle badge border border-light rounded-circle bg-danger p-2 cancel"><span>X</span></span>
-                        </div>
-                        <span>LCD Monitor</span>
-                    </Col>
-                    <Col>$650</Col>
-                    <Col>
-                        <div className="quantity rounded p-2 d-flex justify-content-between align-items-center">
-                            <span>01</span>
-                            <div className="quantity-arrows">
-                                <img src="../public/imgs/up.svg" alt="" />
-                                <img src="../public/imgs/small.svg" alt="" />
-                            </div>
-                        </div>
-                    </Col>
-                    <Col>$650</Col>
-                </Row>
-                <Row className="py-3 px-4 shadow-sm rounded fw-normal mt-4 align-items-center mx-0">
-                    <Col className="d-flex gap-3">
-                        <img src="../public/imgs/joystake (4).png" width={50} alt="" />
-                        <span>H1 Gamepad</span>
-                    </Col>
-                    <Col>$550</Col>
-                    <Col>
-                        <div className="quantity rounded p-2 d-flex justify-content-between align-items-center">
-                            <span>02</span>
-                            <div className="quantity-arrows">
-                                <img src="../public/imgs/up.svg" alt="" />
-                                <img src="../public/imgs/small.svg" alt="" />
-                            </div>
-                        </div>
-                    </Col>
-                    <Col>$1100</Col>
-                </Row> */}
 
                 {
                 cartItems.map((cartItem) => {
@@ -76,8 +40,8 @@ function Cart() {
                         <div className="quantity rounded p-2 d-flex justify-content-between align-items-center">
                             <span>0{cartItem.quantity}</span>
                             <div className="quantity-arrows">
-                                <img src="../public/imgs/up.svg" alt="" onClick={() => dispatch(increaseQuantity(cartItem))} />
-                                <img src="../public/imgs/small.svg" alt="" onClick={() => dispatch(dicreaseQuantity(cartItem))} />
+                                <img src="/imgs/up.svg" alt="" onClick={() => dispatch(increaseQuantity(cartItem))} />
+                                <img src="/imgs/small.svg" alt="" onClick={() => dispatch(dicreaseQuantity(cartItem))} />
                             </div>
                         </div>
                     </Col>
@@ -86,9 +50,9 @@ function Cart() {
                 })
                 }
 
-                <div className="mt-4 d-flex justify-content-between">
-                    <Link to="/allproducts"><div><Button variant="white" className="px-5 py-3 border-black ms-auto text-black">Return To Shop</Button></div></Link>
-                    <div><Button variant="white" className="px-5 py-3 border-black ms-auto">Update Cart</Button></div>
+                <div className="mt-6 mt-sm-4 d-flex justify-content-between">
+                    <Link to="/allproducts"><div><Button variant="white" className="px-sm-5 py-sm-3 border-black ms-auto text-black">Return To Shop</Button></div></Link>
+                    <div><Button variant="white" className="px-sm-5 py-sm-3 border-black ms-auto">Update Cart</Button></div>
                 </div>
             </div>
             <div className="mt-5 d-flex flex-wrap row-gap-5 justify-content-between">

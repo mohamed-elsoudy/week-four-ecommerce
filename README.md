@@ -1,38 +1,12 @@
-# E-Commerce App
+# React + Vite
 
-## About the Project
-This is a fully functional **E-Commerce** application built using **React.js** and **Redux Toolkit**. It allows users to browse products, add items to a shopping cart, manage a wishlist, and handle authentication.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Technologies Used
-- **React.js** - Frontend framework
-- **Redux Toolkit** - State management
-- **React Router Dom** - Navigation
-- **Bootstrap, React-bootstrap CSS** - Styling
-- **FakeStoreAPI / Custom Backend** - All Products Data
+Currently, two official plugins are available:
 
-## Features
--  Add to cart, update quantity
--  Add/remove products to/from wishlist
--  User authentication (Login/Signup)
--  Responsive design
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Usage
-- Browse products and add them to your cart
-- Add/remove items from your wishlist
-- Login or sign up to access your cart and wishlist
-- Proceed to checkout and place orders
-- **Note:** the project is fully functional but i recommend to try the project from all products section such as design make some problems when dealing with data
+## Expanding the ESLint configuration
 
-> ⚠ **Disclaimer:** Some component data may not be fully accurate due to a mix of API data and static data to preserve the design layout.
-This is a fully functional **E-Commerce** application built using **React.js** and **Redux Toolkit**. It allows users to browse products, add items to a shopping cart, manage a wishlist, and handle authentication.
-
-## 🌍 API Used
-- **FakeStore API** for product data *(or your backend API)*
-
-> ⚠ **Note:** The data handling is not entirely accurate as it mixes API data with static data to maintain the design consistency.
-- **FakeStore API** for product data *(or your backend API)*
-
-
-
-
-
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

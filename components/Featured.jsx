@@ -1,7 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Arrows from "../shapes-components/Arrows";
-import MainBtn from "../shapes-components/MainBtn";
-import OurProductsCard from "../dry-components/OurProductsCard";
 import Services from "../dry-components/Services";
 
 function Featured() {
@@ -40,7 +37,7 @@ function Featured() {
                 </div>
             </Col>
         </Row>
-        <span className="arrow-up position-absolute"><img src="../public/imgs/icons_arrow-left.svg" alt="" /></span>
+        <span className="arrow-up position-absolute"><img src="/imgs/icons_arrow-left.svg" alt="" /></span>
         <Services />
     </Container>
     );

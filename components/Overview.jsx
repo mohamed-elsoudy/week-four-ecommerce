@@ -7,8 +7,8 @@ const Overview = () => {
         <Row>
             <Col xs={12} md="4" className="main-border-right">
                 <ul className="mt-5 me-2 parts">
-                    <li className="d-flex justify-content-between"><a href="">Woman’s Fashion</a><img src="../public/imgs/DropDown.svg" alt="" /></li>
-                    <li className="d-flex justify-content-between"><a href="">Men’s Fashion</a><img src="../public/imgs/DropDown.svg" alt="" /></li>
+                    <li className="d-flex justify-content-between"><a href="">Woman’s Fashion</a><img src="/imgs/DropDown.svg" alt="" /></li>
+                    <li className="d-flex justify-content-between"><a href="">Men’s Fashion</a><img src="/imgs/DropDown.svg" alt="" /></li>
                     <li><a href="">Electronics</a></li>
                     <li><a href="">Home & Lifestyle</a></li>
                     <li><a href="">Medicine</a></li>
@@ -22,7 +22,7 @@ const Overview = () => {
                 <div className="new-items text-light">
                     <div className="item ">
                         <div className="d-flex align-items-center gap-4 pt-5">
-                            <img src="../public/imgs/apple.png" alt="" />
+                            <img src="/imgs/apple.png" alt="" />
                             <span>iPhone 14 Series</span>
                         </div>
                         <p className="desc fs-48 fw-bolder">

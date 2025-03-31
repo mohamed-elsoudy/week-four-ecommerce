@@ -12,7 +12,7 @@ function Login() {
   const navigate = useNavigate();
     return (
     <div className="login d-flex flex-wrap align-items-center">
-        <img src="../public/imgs/Side Image.png" alt="" className="log-img" />
+        <img src="/imgs/Side Image.png" alt="" className="log-img" />
         <Form className="login-field">
           <h2 className="fs-1 fw-medium">Log in to Exclusive</h2>
           <p className="mt-2 fs-6">Enter your details below</p>

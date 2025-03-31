@@ -28,7 +28,7 @@ function AboutUs() {
                     <Col xs={3} className="px-5 py-4 main-border rounded text-center">
                         <div className="icon rounded-circle bg-grey mb-4">
                             <span className="rounded-circle bg-black">
-                                <img src="../public/imgs/icon_shop.png" alt="" />
+                                <img src="/imgs/icon_shop.png" alt="" />
                             </span>
                         </div>
                         <div className="fs-32 fw-bolder">10.5k </div>
@@ -37,7 +37,7 @@ function AboutUs() {
                     <Col xs={3} className="px-5 py-4 main-border rounded text-center orange text-light">
                         <div className="icon rounded-circle bg-grey mb-4">
                             <span className="rounded-circle bg-white">
-                                <img src="../public/imgs/Icon-Sale.png" alt="" />
+                                <img src="/imgs/Icon-Sale.png" alt="" />
                             </span>
                         </div>
                         <div className="fs-32 fw-bolder">33k</div>
@@ -46,7 +46,7 @@ function AboutUs() {
                     <Col xs={3} className="px-5 py-4 main-border rounded text-center">
                         <div className="icon rounded-circle bg-grey mb-4">
                             <span className="rounded-circle bg-black">
-                                <img src="../public/imgs/Icon-Shopping bag.png" alt="" />
+                                <img src="/imgs/Icon-Shopping bag.png" alt="" />
                             </span>
                         </div>
                         <div className="fs-32 fw-bolder">45.5k</div>
@@ -55,7 +55,7 @@ function AboutUs() {
                     <Col xs={3} className="px-5 py-4 main-border rounded text-center">
                         <div className="icon rounded-circle bg-grey mb-4">
                             <span className="rounded-circle bg-black">
-                                <img src="../public/imgs/Icon-Moneybag.png" alt="" />
+                                <img src="/imgs/Icon-Moneybag.png" alt="" />
                             </span>
                         </div>
                         <div className="fs-32 fw-bolder">25k</div>
@@ -68,38 +68,38 @@ function AboutUs() {
                 <Row className="our-awesome-employees mt-5">
                     <Col xs={12} sm="6" lg="4">
                         <div className="employee-img bg-grey text-center rounded">
-                            <img src="../public/imgs/tom.png" alt="" />
+                            <img src="/imgs/tom.png" alt="" />
                         </div>
                         <h2 className="fs-32 mt-4 mb-1">Tom Cruise</h2>
                         <p className="text-black mb-3">Founder & Chairman</p>
                         <ul className="icons d-flex gap-3">
-                            <li><img src="../public/imgs/Icon-Twitter.svg" alt="" /></li>
-                            <li><img src="../public/imgs/icon-instagram.svg" alt="" /></li>
-                            <li><img src="../public/imgs/Icon-Linkedin.svg" alt="" /></li>
+                            <li><img src="/imgs/Icon-Twitter.svg" alt="" /></li>
+                            <li><img src="/imgs/icon-instagram.svg" alt="" /></li>
+                            <li><img src="/imgs/Icon-Linkedin.svg" alt="" /></li>
                         </ul>
                     </Col>
                     <Col xs={12} sm="6" lg="4">
                         <div className="employee-img bg-grey text-center rounded">
-                            <img src="../public/imgs/emma.png" alt="" />
+                            <img src="/imgs/emma.png" alt="" />
                         </div>
                         <h2 className="fs-32 mt-4 mb-1">Emma Watson</h2>
                         <p className="text-black mb-3">Managing Director</p>
                         <ul className="icons d-flex gap-3">
-                            <li><img src="../public/imgs/Icon-Twitter.svg" alt="" /></li>
-                            <li><img src="../public/imgs/icon-instagram.svg" alt="" /></li>
-                            <li><img src="../public/imgs/Icon-Linkedin.svg" alt="" /></li>
+                            <li><img src="/imgs/Icon-Twitter.svg" alt="" /></li>
+                            <li><img src="/imgs/icon-instagram.svg" alt="" /></li>
+                            <li><img src="/imgs/Icon-Linkedin.svg" alt="" /></li>
                         </ul>
                     </Col>
                     <Col xs={12} sm="6" lg="4">
                         <div className="employee-img bg-grey text-center rounded">
-                            <img src="../public/imgs/wills.png" alt="" />
+                            <img src="/imgs/wills.png" alt="" />
                         </div>
                         <h2 className="fs-32 mt-4 mb-1">Will smith</h2>
                         <p className="text-black mb-3">Product Designer</p>
                         <ul className="icons d-flex gap-3">
-                            <li><img src="../public/imgs/Icon-Twitter.svg" alt="" /></li>
-                            <li><img src="../public/imgs/icon-instagram.svg" alt="" /></li>
-                            <li><img src="../public/imgs/Icon-Linkedin.svg" alt="" /></li>
+                            <li><img src="/imgs/Icon-Twitter.svg" alt="" /></li>
+                            <li><img src="/imgs/icon-instagram.svg" alt="" /></li>
+                            <li><img src="/imgs/Icon-Linkedin.svg" alt="" /></li>
                         </ul>
                     </Col>
                 </Row>

@@ -19,7 +19,7 @@ function Wishlist() {
                             key={i}
                             id={item.id}
                             imgSrc={item.imgSrc || item.image}
-                            iconSrc="../public/imgs/tras.png" 
+                            iconSrc="/imgs/tras.png" 
                             isNew={false} 
                             title={item.title} 
                             price={item.price} 
@@ -41,8 +41,8 @@ function Wishlist() {
                 </div>
                 <Row className="gap-5 mt-5 justify-content-center justify-content-lg-start">
                     <WishlistCard
-                    imgSrc="../public/imgs/laabtop.png"
-                    iconSrc="../public/imgs/eye.png" 
+                    imgSrc="/imgs/laabtop.png"
+                    iconSrc="/imgs/eye.png" 
                     isNew={false} 
                     title="ASUS FHD Gaming Laptop" 
                     price={960} 
@@ -53,8 +53,8 @@ function Wishlist() {
                     rate={65}
                     />
                     <WishlistCard
-                    imgSrc="../public/imgs/screen.png"
-                    iconSrc="../public/imgs/eye.png" 
+                    imgSrc="/imgs/screen.png"
+                    iconSrc="/imgs/eye.png" 
                     isNew={false} 
                     title="IPS LCD Gaming Monitor" 
                     price={1960}
@@ -62,8 +62,8 @@ function Wishlist() {
                     rate={65} 
                     />
                     <WishlistCard
-                    imgSrc="../public/imgs/joystake (4).png"
-                    iconSrc="../public/imgs/eye.png" 
+                    imgSrc="/imgs/joystake (4).png"
+                    iconSrc="/imgs/eye.png" 
                     isNew={true} 
                     title="HAVIT HV-G92 Gamepad"
                     price={560}
@@ -71,8 +71,8 @@ function Wishlist() {
                     rate={65} 
                     />
                     <WishlistCard
-                    imgSrc="../public/imgs/keyboard.png"
-                    iconSrc="../public/imgs/eye.png" 
+                    imgSrc="/imgs/keyboard.png"
+                    iconSrc="/imgs/eye.png" 
                     isNew={false} 
                     title="AK-900 Wired Keyboard"
                     price={200}

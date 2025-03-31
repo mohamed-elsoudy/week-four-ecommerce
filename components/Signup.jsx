@@ -13,7 +13,7 @@ function Signup() {
   const navigate = useNavigate();
     return (
     <div className="signup d-flex flex-wrap align-items-center">
-        <img src="../public/imgs/Side Image.png" alt="" className="log-img" />
+        <img src="/imgs/Side Image.png" alt="" className="log-img" />
         <Form className="login-field">
           <h2 className="fs-1 fw-medium">Create an account</h2>
           <p className="mt-2 fs-6">Enter your details below</p>
@@ -39,7 +39,7 @@ function Signup() {
               Create Account
             </Button>
             <Button variant="white" className="px-5 py-3 main-border">
-              <img src="../public/imgs/Icon-Google.png" width={24} height={24} className='me-2' alt="" />
+              <img src="/imgs/Icon-Google.png" width={24} height={24} className='me-2' alt="" />
               Sign up with Google
             </Button>
             <span className='text-center txt-grey fs-16 fw-normal'>Already have account? <Link to="/login" className='text-dark main-border-bottom pb-1 ps-1 fs-16 fw-semibold'>Login</Link></span>

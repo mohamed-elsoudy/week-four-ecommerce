@@ -277,7 +277,8 @@
 .arrows .arrow-right {
     transform: rotate(180deg);
 }
-.today-products {
+.today-products,
+.related-products {
     overflow-x: auto;
 }
 /* End todays */

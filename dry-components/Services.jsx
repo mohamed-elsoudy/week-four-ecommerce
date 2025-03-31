@@ -6,7 +6,7 @@ function Services() {
             <Col xs={12} md="6" lg="4" className="text-center service">
                 <div className="img rounded-circle bg-dark-grey p-2 mx-auto">
                     <span className="rounded-circle bg-black">
-                        <img src="../public/imgs/icon-delivery.png" alt="" />
+                        <img src="/imgs/icon-delivery.png" alt="" />
                     </span>
                 </div>
                 <h4 className="mt-4 fw-bolder">FREE AND FAST DELIVERY</h4>
@@ -15,7 +15,7 @@ function Services() {
             <Col xs={12} md="6" lg="4" className="text-center service">
                 <div className="img rounded-circle bg-dark-grey p-2 mx-auto">
                     <span className="rounded-circle bg-black">
-                        <img src="../public/imgs/Icon-Customer service.png" alt="" />
+                        <img src="/imgs/Icon-Customer service.png" alt="" />
                     </span>
                 </div>
                 <h4 className="mt-4 fw-bolder">24/7 CUSTOMER SERVICE</h4>
@@ -24,7 +24,7 @@ function Services() {
             <Col xs={12} xl="4" className="text-center service">
                 <div className="img rounded-circle bg-dark-grey p-2 mx-auto">
                     <span className="rounded-circle bg-black">
-                        <img src="../public/imgs/Icon-secure.png" alt="" />
+                        <img src="/imgs/Icon-secure.png" alt="" />
                     </span>
                 </div>
                 <h4 className="mt-4 fw-bolder">MONEY BACK GUARANTEE</h4>

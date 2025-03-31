@@ -29,7 +29,7 @@ function EnhanceMusic() {
                             <button className="green text-light border-none py-3 px-5 rounded">Buy Now</button>
                     </Col>
                     <Col className="d-none d-lg-flex justify-content-end" xs={8}>
-                        <img src="../public/imgs/Frame 694.png" width={600} height={420} alt="" />
+                        <img src="/imgs/Frame 694.png" width={600} height={420} alt="" />
                     </Col>
                 </Row>
             </Container>

@@ -5,8 +5,7 @@ import { Link } from "react-router-dom"
 import { addToWishList, removeFromWishList } from "../src/store/explore-our-products/wishlistSlice";
 import { FaHeart } from "react-icons/fa";
 
-function OurProductsCard({id, imgSrc, isNew, title, price, rate, circleColor, product = {imgSrc, isNew, title, price, rate, circleColor, id}}) {
-
+function OurProductsCard({product}) {
     const dispatch = useDispatch();
     const wishlist = useSelector((state) => state.wishlist.wishlistItems);
     const isInWishlist = wishlist.some((item) => item.id === product.id);
@@ -33,15 +32,15 @@ function OurProductsCard({id, imgSrc, isNew, title, price, rate, circleColor, pr
     return (
     <Col xs ={12} sm="6" md="4" lg="3" className="product-card">
         <div className="card-head bg-grey d-flex justify-content-center align-items-center rounded-1 position-relative">
-            <Link to={`/productdetails/${product.id}`}><img src={imgSrc} alt="" width={172}/></Link>
-            {isNew == true && <div className="new position-absolute green">New</div>}
+            <Link to={`/productdetails/${product.id}`}><img src={product.image} alt="" width={172}/></Link>
+            {product.isNew && <div className="new position-absolute green">New</div>}
 
                 <ul className="shapes position-absolute">
                     <li style={{cursor: "pointer"}} onClick={() => {hadleHeartClick()}}>
-                        {isInWishlist? <FaHeart size={24} className={"txt-orange"} /> : <img src="../public/imgs/Wishlist.svg" alt="" />}
+                        {isInWishlist? <FaHeart size={24} className={"txt-orange"} /> : <img src="/imgs/Wishlist.svg" alt="" />}
                     </li>
                     <li>
-                        <img src="../public/imgs/Cart1.svg" alt="" />
+                        <img src="/imgs/Cart1.svg" alt="" />
                     </li>
                 </ul>
 
@@ -50,24 +49,24 @@ function OurProductsCard({id, imgSrc, isNew, title, price, rate, circleColor, pr
                 </div>
         </div>
         <div className="card-body">
-            <span className="fs-16 fw-semibold d-block mt-2">{title}</span>
+            <span className="fs-16 fw-semibold d-block mt-2">{product.title}</span>
             <div className="stars mt-2 d-flex align-items-end gap-1">
                 <div className="price mt-2 lh-1 fs-16 fw-semibold txt-orange">
-                    ${price}
+                    ${product.price}
                 </div>
                 <ul className="d-flex gap-1">
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
                 </ul>
-                <span className="txt-grey fw-bolder ps-2 fs-14">({rate})</span>
+                <span className="txt-grey fw-bolder ps-2 fs-14">({product.rating.count})</span>
             </div>
         </div>
-                {circleColor &&
+                {product.circleColor &&
                 <div className="colors mt-3 d-flex gap-2">
-                    <span className="first-color rounded-circle d-inline-block ms-1" style={{backgroundColor: circleColor}}></span>
+                    <span className="first-color rounded-circle d-inline-block ms-1" style={{backgroundColor: product.circleColor}}></span>
                     <span className="orange rounded-circle d-inline-block"></span>
                 </div>
                 }

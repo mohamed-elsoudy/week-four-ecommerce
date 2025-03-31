@@ -14,11 +14,11 @@ function Categories() {
                 <Arrows></Arrows>
             </div>
             <div className="d-flex mt-4 category-cards pt-5 gap-4">
-                <CateogryCard content="Phones" src="../public/imgs/categories/mobile.svg" />
-                <CateogryCard content="Computers" src="../public/imgs/categories/Category-Computer.svg" />
-                <CateogryCard content="Smart Watches" src="../public/imgs/categories/Category-SmartWatch.svg" />
-                <CateogryCard content="Head Phones" src="../public/imgs/categories/Category-Headphone.svg" />
-                <CateogryCard content="Gaming" src="../public/imgs/categories/gaming.svg" />
+                <CateogryCard content="Phones" src="/imgs/categories/mobile.svg" />
+                <CateogryCard content="Computers" src="/imgs/categories/Category-Computer.svg" />
+                <CateogryCard content="Smart Watches" src="/imgs/categories/Category-SmartWatch.svg" />
+                <CateogryCard content="Head Phones" src="/imgs/categories/Category-Headphone.svg" />
+                <CateogryCard content="Gaming" src="/imgs/categories/gaming.svg" />
             </div>
         </Container>
     );

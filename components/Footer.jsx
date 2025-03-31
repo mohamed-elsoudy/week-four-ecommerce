@@ -12,7 +12,7 @@ function Footer() {
                             <li className="mt-3 fs-20">Subscribe</li>
                             <li className="mt-2 fs-16 fw-normal">Get 10% off your first order</li>
                             <li className="exclusive-input position-relative mt-2">
-                                <img src="../public/imgs/icon-send.png" className="icon-send" alt="" />
+                                <img src="/imgs/icon-send.png" className="icon-send" alt="" />
                                 <input type="email" placeholder="Enter your email" className=""/>
                             </li>
                         </ul>
@@ -48,17 +48,17 @@ function Footer() {
                         <h5 className="c-white fs-20 fw-semibold">Download App</h5>
                         <p className="mt-4">Save $3 with App New User Only</p>
                         <div className="d-flex gap-3">
-                            <img src="../public/imgs/Qr Code.png" alt="" />
+                            <img src="/imgs/Qr Code.png" alt="" />
                             <div className="download d-flex flex-column">
-                                <img src="../public/imgs/google.png" alt="" className="mb-3"/>
-                                <img src="../public/imgs/download-appstore.png" alt=""/>
+                                <img src="/imgs/google.png" alt="" className="mb-3"/>
+                                <img src="/imgs/download-appstore.png" alt=""/>
                             </div>
                         </div>
                         <ul className="d-flex gap-4 mt-4">
-                            <li><a href=""><img src="../public/imgs/Icon-Facebook.png" alt="" /></a></li>
-                            <li><a href=""><img src="../public/imgs/Icon-Twitter.png" alt="" /></a></li>
-                            <li><a href=""><img src="../public/imgs/icon-instagram.png" alt="" /></a></li>
-                            <li><a href=""><img src="../public/imgs/Icon-linkedin.png" alt="" /></a></li>
+                            <li><a href=""><img src="/imgs/Icon-Facebook.png" alt="" /></a></li>
+                            <li><a href=""><img src="/imgs/Icon-Twitter.png" alt="" /></a></li>
+                            <li><a href=""><img src="/imgs/icon-instagram.png" alt="" /></a></li>
+                            <li><a href=""><img src="/imgs/Icon-linkedin.png" alt="" /></a></li>
                         </ul>
                     </div>
                     </Row>

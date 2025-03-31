@@ -25,11 +25,11 @@ function WishlistCard({id, imgSrc, iconSrc, isNew, title, price, rate, stars, is
                 </div>
                 {stars && 
                 <ul className="d-flex gap-1">
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
-                    <li><img src="../public/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
+                    <li><img src="/imgs/star.svg" alt="" /></li>
                 </ul>
                 }
                 {rate && <span className="txt-grey fw-bolder ps-2 fs-14">({rate})</span>}

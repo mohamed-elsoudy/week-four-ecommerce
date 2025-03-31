@@ -10,12 +10,12 @@ function Contact() {
         </Breadcrumb>
         <Row className="mt-5 justify-content-start gap-4">
                 <Col xs={12} md="3" className="shadow-sm p-4">
-                    <h2 className="fs-6 fw-medium"><img src="../public/imgs/icons-phone.png" alt="" className="me-3" />Call To Us</h2>
+                    <h2 className="fs-6 fw-medium"><img src="/imgs/icons-phone.png" alt="" className="me-3" />Call To Us</h2>
                     <ul className="fs-16 fw-normal mt-3 border-solid-bottom">
                         <li className="mb-2">We are available 24/7, 7 days a week.</li>
                         <li className="mb-4">Phone: +8801611112222</li>
                     </ul>
-                    <h2 className="fs-6 fw-medium mt-4"><img src="../public/imgs/icons-mail.png" alt="" className="me-3" />Write To Us</h2>
+                    <h2 className="fs-6 fw-medium mt-4"><img src="/imgs/icons-mail.png" alt="" className="me-3" />Write To Us</h2>
                     <ul className="fs-16 fw-normal mt-3">
                         <li className="mb-3 lh-sm">Fill out our form and we will contact you within 24 hours.</li>
                         <li className="mb-4">Emails: customer@exclusive.com</li>
