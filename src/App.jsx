@@ -12,7 +12,7 @@ import Signup from "../components/Signup";
 import Wishlist from "../components/Wishlist";
 import Cart from "../components/Cart";
 import BillingDetails from "../components/BillingDetails";
-import Account from "../components/account";
+import Account from "../components/Account";
 import Contact from "../components/Contact";
 import NotFound from "../components/NotFound";
 import AboutUs from "../components/AboutUs";
