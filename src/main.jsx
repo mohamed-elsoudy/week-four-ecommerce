@@ -13,7 +13,7 @@ import Signup from '../components/Signup.jsx';
 import Wishlist from '../components/Wishlist.jsx';
 import Cart from '../components/Cart.jsx';
 import BillingDetails from '../components/BillingDetails.jsx';
-import Account from '../components/account.jsx';
+import Account from '../components/Account.jsx';
 import Contact from '../components/Contact.jsx';
 import AboutUs from '../components/AboutUs.jsx';
 import Notfound from '../components/NotFound.jsx';
